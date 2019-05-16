@@ -11,7 +11,7 @@ session_destroy(); // sessionの破棄
 <html lang="ja">
 <head>
   <meta charset="UTF-8"/>
-  <title>面接Answer</title>
+  <title>Answerしようぜ</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="shortcut icon" href="./img/favicon.ico">
 
