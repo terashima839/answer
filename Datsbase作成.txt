@@ -1,0 +1,77 @@
+
+データベース作成////////////////////////////////////////////////////////
+
+CREATE DATABASE m_db DEFAULT CHARACTER SET utf8;
+GRANT ALL PRIVILEGES ON t_db.* TO t_user@'localhost' 
+IDENTIFIED BY 'm_pass' WITH GRANT OPTION;
+
+USE m_db;
+
+テーブル作成////////////////////////////////////////////////////////
+
+CREATE TABLE issue_tb(
+  issue_id int unsigned not null auto_increment,
+  issue_text varchar(100) not null,
+  primary key( issue_id )
+);
+
+データ挿入////////////////////////////////////////////////////////
+
+INSERT INTO issue_tb(issue_text)
+VALUES ('あなたの長所を教えてください。');
+INSERT INTO issue_tb(issue_text)
+VALUES ('自己紹介をお願いします。');
+INSERT INTO issue_tb(issue_text)
+VALUES ('今までで一番苦労したことはなんですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('勉強は好きですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('将来はどうなりたいですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('一番辛かったことはなんですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('プログラミングは楽しいですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('志望動機はなんですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('得意なことはなんですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('短所はなんですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('英語は使えますか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('最初の１年は土日も勉強に費やすことは可能ですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('会社に求めるものはなんですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('希望の給与はどのくらいですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('他に応募している企業はありますか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('何か質問は何かありますか？（５つ）');
+INSERT INTO issue_tb(issue_text)
+VALUES ('弊社のホームページを見てどう思いましたか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('前職を辞めた、または辞めてまで目指す理由はなんですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('就業期間のない間は何をしていたのですか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('エラーが起こって自分ではどうにもならなかったらどうしますか？');
+INSERT INTO issue_tb(issue_text)
+VALUES ('');
+
+
+
+DELETE FROM issue_tb
+WHERE issue_id=1;
+
+
+
+
+
+
+
+テーブルデータ表示////////////////////////////////////////////////////////
+Select * from issue_tb;
+
+
